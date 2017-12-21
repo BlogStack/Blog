@@ -1,22 +1,13 @@
-/*estilos pagina principal -styles*/
 body{
-	width:1280px;  
-	margin: 0 auto;
 
-  color: #333;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5em;
-}
-/*primero en el móvil (mobile first)*/
-
-nav {
-  padding: 1em;
-  font-family: font-family: Verdana, Geneva, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0,0,0,.1);
+  font: 1.1rem sans-serif;
+  text-transform: uppercase;
+  color: black;
+  margin: 0px 80px 0px 80px;
 }
 
+/*** nav menu principal *****/
 nav ul {
   list-style: none;
   padding: 0;
@@ -41,6 +32,67 @@ nav li a:hover {
       
     }
     nav li {
-    	border: 1px solid  #f2f4f4 ;
+      border: 1px solid  #f2f4f4 ;
     }
   }
+.grid{
+  padding: 1rem;
+}
+.grid-item{
+  padding: 0.5rem;
+ 
+}
+.header{
+  background-color: white;
+}
+.nav {
+  background-color: white;
+}
+.sidebar{
+  background-color: white;
+}
+.main{
+  background-color: white;
+}
+/*******GRID PRINCIPAL ESTTRUCTURA PAGINA ***********************************************/
+.grid {
+  display: grid;
+  grid-gap: .2rem;
+  min-height: 90vh;/*ajusta al alto de la pantalla-*/
+  grid-template-rows: 20% repeat(2, 5%) 1fr 100px;
+  
+  
+}
+/*******GRID CONTENIDO CENTRAL ARTICULOS ***********************************************/
+#content__grid { 
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1.5rem;
+
+  }
+  #content__grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-bottom:2px solid   #0f9cf3; 
+  }
+#content__grid > article .categoria{
+  font-size: 12px;
+  padding: 0 1rem ;
+  
+}
+#content__grid > article .fecha{
+  font-size: 12px;
+  padding: 0 1rem ;
+}
+.content__grid--image{
+  text-align: center;
+}
+
+/********* media querys ************************
+***************************************************************/
+@media screen and (max-width: 400px) and (min-width: 120px) {
+    body {
+        
+        margin: 0;
+    }
+}
