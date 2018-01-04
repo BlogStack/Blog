@@ -1,0 +1,110 @@
+body{
+
+  background-color: rgba(0,0,0,.1);
+  font: 1.1rem sans-serif;
+  color: black;
+  margin: 0px 150px 0px 150px;
+
+}
+
+/*** nav menu principal *****/
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+nav li a {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+nav li a:hover {
+  background:  #FFC300;
+  color: #000;
+}
+ @media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+      
+    }
+    nav li {
+      border: 1px solid  #f2f4f4 ;
+    }
+  }
+.grid{
+  padding: 1rem;
+}
+.grid-item{
+  padding: 0.5rem;
+ 
+}
+.header{
+  background-color: white;
+}
+.nav {
+  background-color: white;
+}
+.sidebar{
+  background-color: white;
+}
+.main{
+  background-color: white;
+}
+/*******GRID PRINCIPAL ESTTRUCTURA PAGINA ***********************************************/
+.grid {
+  display: grid;
+  grid-gap: .2rem;
+  min-height: 90vh;/*ajusta al alto de la pantalla-*/
+  grid-template-rows: 20% repeat(2, 5%) 1fr 100px;
+  
+  
+}
+/*******GRID CONTENIDO CENTRAL ARTICULOS ***********************************************/
+#content__grid { 
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr) ) ;
+
+  }
+  #content__grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-bottom:2px solid   #0f9cf3; 
+   grid-column: auto / span 3;
+   min-height: 200px;
+  }
+#content__grid > article .categoria{
+  font-size: 12px;
+  padding: 0 1rem;
+  
+}
+#content__grid > article .fecha{
+  font-size: 12px;
+  padding: 0 1rem ;
+}
+.content__grid--image{
+  text-align: center;
+}
+
+
+/********* media querys ************************
+***************************************************************/
+@media screen and (max-width: 400px) and (min-width: 120px) {
+    body {
+      margin: 0;
+    }
+}
+
+/****************** footer *****************************************************/
+.footer{
+  background-color: #fff;
+}
+.footer li ,a {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
