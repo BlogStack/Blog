@@ -1,0 +1,74 @@
+/*ESTILOS DEL FORMULARIO MI PERFIL */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+ #wrapper{
+	background-color: #FAFAFA;
+	display: grid;
+	grid-template-columns: 20px repeat(auto-fit, minmax(210px, 1fr) ) 20px ;
+	}
+ .box{
+ 	display: grid;
+ 	grid-column: auto / span 2;
+  }
+
+input[type="text"],
+input[type="name"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="number"],
+input[type="color"],
+
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 75%;
+  background-color: #f2f2f2;
+  color: #8a97a0;
+ // box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+.profile-button{
+  padding: 5px 5px 5px 5px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 14px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 15%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+.botones{
+	display: block;		
+	margin: 0px 0px 0px 246px;
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}

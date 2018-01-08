@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BlogStack</title>
+        <link rel="stylesheet" type="text/css" href="../css/form-styles.css">
+        <link rel="stylesheet" type="text/css" href="../css/blog-styles2.css">
+    </head>
+    <body>
+        <div class="grid">
+            <!--Cabecera-->
+            <header class="grid-item__header">
+                <a href="../html/index.html"><img src="../images/logo.png" alt="logo de la web"></a>
+                <nav class="grid-item__nav-header">
+                    <ul class="grid-item__nav-ul">
+                        <li class="grid-item__nav-item"><a class="grid-item__nav-link" href="../html/formulario.html">Mi Perfil</a></li>
+                        <li class="grid-item__nav-item"><a class="grid-item__nav-link" href="#">Añadir artículo</a></li>
+                        <li class="grid-item__nav-item"><a class="grid-item__nav-link" href="#">Añadir imagen</a></li>
+                        <li class="grid-item__nav-item"><a class="grid-item__nav-link" href="#">Juegos</a></li>
+                        <li class="grid-item__nav-item"><a class="grid-item__nav-link" href="#">Chat</a></li>
+                        <li class="grid-item__nav-item"><a class="grid-item__nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <aside class="grid-item__sidebar"><p class="#">Top 6 Artículos</p></aside>
+            <!--Contenido-->
+            <main class="grid-item main">
+                <div id="wrapper">
+                    <div class="box"></div>
+                    <div class="box">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="user_name">		
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" name="telefono" id="tel" pattern="[0-9]{9}" required/>
+                        <label for="date">Fecha de Nacimiento</label>
+                        <input type="date" name="birthdate" id="date" step="1" min="1900-01-01" max="2018-01-01" value="2017-01-01" required/>
+                        <label for="color">Color Favorito</label>
+                        <input type="color" name="color" id="color" required>
+                    </div>
+                    <div class="box">
+                        <label for="surname">Apellidos</label>
+                        <input type="text" id="surname" name="user_surname">		
+                        <label for="email">Email</label>
+                        <input type="email" name="user_email" id="email" 
+                               pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required/>
+                        <label for="altura">Altura</label>
+                        <input type="number" name="altura" id="altura" min="100" max="220" required/>
+                        <label for="url">Web Favorita</label>
+                        <input type="url" name="url" id="url" required/>
+                    </div><!--end box-->
+                    <div class="box"></div>
+                </div><!--end wrapper-->
+                <div class="botones">	
+                    <button class="profile-button">SAVE</button>
+                    <button class="profile-button">CANCEL</button>
+                </div>	
+            </main>
+
+            <!--Pie de página-->
+            <footer class="grid-item__footer">
+                <nav class="grid-item__nav-footer">
+                    <ul class="grid-item__nav-ul">
+                        <li class="grid-item__nav-item-footer"><a class="grid-item__nav-item-link" href="../html/index.html">Inicio</a></li>
+                        <li class="grid-item__nav-item-footer"><a class="grid-item__nav-item-link" href="#">Ayuda</a></li>
+                        <li class="grid-item__nav-item-footer"><a class="grid-item__nav-item-link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </footer>
+
+        </div>
+    </body>
+</html>
